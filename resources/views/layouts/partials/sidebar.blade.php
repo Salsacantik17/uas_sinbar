@@ -84,12 +84,6 @@
                           </a>
                         </li>
                         @endif
-                        <li class="nav-item">
-                          <a href="{{ route('transaksi.index') }}" class="nav-link bg-white">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Transaksi</p>
-                          </a>
-                        </li>
                       </ul>
                     </li>
 

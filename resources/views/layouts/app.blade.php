@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>{{ config('app.name') }} - Sistem Informasi Manajemen Servis Komputer</title>
+  <title>{{ config('app.name') }} - Sistem Informasi Inventory Barang</title>
   {{-- Icon --}}
   <link rel="icon" href="{{ asset('/AdminLTE/dist/img/AdminLTELogo.png') }}" type="image/x-icon">
   <!-- Google Font: Source Sans Pro -->

@@ -50,10 +50,11 @@ Route::group([
     Route::resource('/permintaan', PermintaanController::class)->except(['show']);
     Route::get('/permintaan/{permintaan}/edit', [PermintaanController::class, 'edit'])->name('permintaan.edit');
     Route::delete('/permintaan/{id}', [PermintaanController::class, 'destroy'])->name('permintaan.delete');
-
+    
     Route::resource('/pengiriman', PengirimanController::class)->except(['show']);
     Route::get('/pengiriman/{pengiriman}/edit', [PengirimanController::class, 'edit'])->name('pengiriman.edit');
     Route::delete('/pengiriman/{id}', [PengirimanController::class, 'destroy'])->name('pengiriman.delete');
+
 
     Route::group([
         'middleware' => 'role:admin'

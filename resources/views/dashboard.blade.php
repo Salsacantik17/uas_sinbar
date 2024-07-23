@@ -57,36 +57,7 @@
     <div class="row">
         <!-- Left col -->
         <div class="col-lg-12">
-            <!-- Tabel Daftar Barang -->
-            {{-- <div class="card">
-                <div class="card-body table-responsive p-0">
-                    <table class="table table-hover text-nowrap">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Kode Barang</th>
-                                <th>Nama Barang</th>
-                                <th>Kategori</th>
-                                <th>Jumlah</th>
-                                <th>Harga</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($jumlahBarang as $barang)
-                                <tr>
-                                    <td>{{ $barang->id }}</td>
-                                    <td>{{ $barang->kd_barang }}</td>
-                                    <td>{{ $barang->nama }}</td>
-                                    <td>{{ $barang->kategoribarang->nama_kategori }}</td>
-                                    <td>{{ $barang->jumlah }}</td>
-                                    <td>{{ $barang->harga_beli }}</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
-                <!-- /.card-body -->
-            </div> --}}
+            
 @endsection
 
 @push('script')

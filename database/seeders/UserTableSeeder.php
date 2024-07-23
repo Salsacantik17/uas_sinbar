@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class UserTableSeeder extends Seeder
 {
@@ -13,21 +14,21 @@ class UserTableSeeder extends Seeder
     public function run(): void
     {
         // Membuat beberapa pengguna acak
-        User::factory(1)->create();
+       // User::factory(1)->create();
+       User::create([
+        'name' => 'Admin',
+        'username' => 'admin',
+        'password' => Hash::make('salsacantik'),
+        'email' => 'admin@gmail.com',
+        'id_role' => 1,
+       ]);
 
-        // Membuat pengguna administrator
-        $admin = User::first();
-        $admin->name = 'Admin';
-        $admin->username = 'admin';
-        $admin->email = 'admin@gmail.com';
-        $admin->id_role = 1;
-        $admin->save();
-
-        // Membuat pengguna karyawan
-        $karyawan = User::factory()->create([
-            'name' => 'Karyawan',
-            'username' => 'karyawan',
-            'email' => 'karyawan@gmail.com',
+        // Membuat pengguna pengguna
+        User::  create([
+            'name' => 'Pegawai',
+            'username' => 'pegawai',
+            'password' => Hash::make('salsacantik'),
+            'email' => 'pegawai@gmail.com',
             'id_role' => 2,
         ]);
     }
